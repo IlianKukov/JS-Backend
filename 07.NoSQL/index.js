@@ -8,7 +8,7 @@ async function run() {
 
     const collection = db.collection('students');
 
-    const students = await collection.find({name: 'Pesho'}).toArray();
+    const students = await collection.find({Name: "Pesho"}).toArray();
 
     console.log(students);
 }
