@@ -1,4 +1,3 @@
-const { log } = require('console');
 const mongoose = require('mongoose');
 
 mongoose.connect(`mongodb://localhost:21017/test1`)
@@ -16,6 +15,7 @@ const student = new Student({
     Age: 25
 });
 
+console.log(student);
 
 student.save()
 .then(createStudent =>{
